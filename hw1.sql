@@ -36,9 +36,3 @@ select * from countrylanguage where (language = 'Russian' or language = 'English
 
 -- получить все города, населения которых от 1 000 000 до 5 000 000 из таблицы city
 select name, population from city where population between 1000000 and 5000000;
-
-
-
-
-
-
