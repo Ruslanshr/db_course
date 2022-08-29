@@ -20,7 +20,7 @@ select Name from city where population > 5000000;
 select * from city where name = 'London';
 
 -- узнать все официальные языки, где процент говорящих выше 80 % из таблицы countrylanguage
-select language from countrylanguage where percentage > 80;
+select language from countrylanguage where percentage > 80 and isOfficial = "T";
 
 -- узнать все города из Австралии или из России из таблицы city 
 select name from city where District Like '%Australia' or 'Russia';
