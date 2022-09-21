@@ -66,6 +66,6 @@ select count(empId) from EMPLOYEE;
 select  dept, count(name) from EMPLOYEE GROUP BY dept;
 
 -- выведи отделы, где минимальная зарплата больше 40 000
-select dept from EMPLOYEE where salary > 40000; 
+select dept from EMPLOYEE group by dept having min(salary) > 40000; 
 
 
